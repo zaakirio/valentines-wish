@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Savya - A Valentine's Love Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Stars/Sparkles -->
+    <div class="sparkles-container" id="sparklesContainer"></div>
+
+    <!-- Opening Screen -->
+    <section class="screen opening-screen active" id="openingScreen">
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body">
+                <div class="heart-seal"></div>
+            </div>
+            <p class="envelope-text">Click to Open</p>
+        </div>
+        <h2 class="to-text">To: Savya</h2>
+    </section>
+
+    <!-- Main Card Screen -->
+    <section class="screen card-screen" id="cardScreen">
+        <div class="card-container">
+            <!-- Page 1: Opening -->
+            <div class="card-page page-1 active" id="page1">
+                <div class="page-content">
+                    <div class="animated-heart main-heart">
+                        <div class="heart-pulse"></div>
+                    </div>
+                    <h1 class="title">Savya</h1>
+                    <p class="subtitle">Every moment with you feels like magic</p>
+                    <div class="scroll-hint">
+                        <span>Scroll down</span>
+                        <div class="scroll-arrow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 2: Love Letter -->
+            <div class="card-page page-2" id="page2">
+                <div class="page-content letter-content">
+                    <div class="letter-paper">
+                        <h2>My Dearest Savya,</h2>
+                        <p class="letter-line" data-delay="0">In a world of billions, somehow the universe led me to you.</p>
+                        <p class="letter-line" data-delay="1">Your smile lights up my darkest days,</p>
+                        <p class="letter-line" data-delay="2">Your laugh is my favorite melody,</p>
+                        <p class="letter-line" data-delay="3">Your presence makes everything feel right.</p>
+                        <p class="letter-line" data-delay="4">You are my peace in chaos,</p>
+                        <p class="letter-line" data-delay="5">My joy in sadness,</p>
+                        <p class="letter-line" data-delay="6">My home wherever we may be.</p>
+                        <div class="signature">Forever Yours</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3: Interactive Hearts -->
+            <div class="card-page page-3" id="page3">
+                <div class="page-content">
+                    <h2 class="reasons-title">Reasons I Love You</h2>
+                    <p class="reasons-subtitle">Click each heart to reveal</p>
+                    <div class="hearts-grid">
+                        <div class="reason-heart" data-reason="Your kindness">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart" data-reason="Your beautiful smile">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart" data-reason="Your gentle soul">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart" data-reason="How you make me laugh">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart" data-reason="Your intelligence">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart" data-reason="The way you care">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart" data-reason="Your warm hugs">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart" data-reason="Simply being you">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                        <div class="reason-heart special" data-reason="Everything about you">
+                            <div class="heart-shape"></div>
+                            <span class="reason-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 4: Promise -->
+            <div class="card-page page-4" id="page4">
+                <div class="page-content">
+                    <div class="infinity-container">
+                        <svg class="infinity-symbol" viewBox="0 0 200 100">
+                            <path class="infinity-path" d="M50,50 C50,20 80,20 100,50 C120,80 150,80 150,50 C150,20 120,20 100,50 C80,80 50,80 50,50" fill="none" stroke="#e74c3c" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <h2 class="promise-title">My Promise To You</h2>
+                    <div class="promises">
+                        <p class="promise">To love you endlessly</p>
+                        <p class="promise">To support your dreams</p>
+                        <p class="promise">To be your safe haven</p>
+                        <p class="promise">To grow old with you</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 5: Final -->
+            <div class="card-page page-5" id="page5">
+                <div class="page-content final-content">
+                    <div class="final-hearts">
+                        <div class="heart-duo">
+                            <div class="heart left-heart"></div>
+                            <div class="heart right-heart"></div>
+                        </div>
+                    </div>
+                    <h1 class="final-title">Happy Valentine's Day</h1>
+                    <h2 class="final-name">Savya</h2>
+                    <p class="final-message">You are my today and all of my tomorrows</p>
+                    <button class="replay-btn" id="replayBtn">Read Again</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="nav-dots">
+            <span class="dot active" data-page="1"></span>
+            <span class="dot" data-page="2"></span>
+            <span class="dot" data-page="3"></span>
+            <span class="dot" data-page="4"></span>
+            <span class="dot" data-page="5"></span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
