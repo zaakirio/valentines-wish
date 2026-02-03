@@ -709,7 +709,25 @@ body {
     font-style: italic;
     font-size: 1.2rem;
     color: #666;
+    margin-bottom: 20px;
+}
+
+.valentine-question {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--deep-red);
     margin-bottom: 40px;
+    animation: pulse-text 2s ease-in-out infinite;
+}
+
+@keyframes pulse-text {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .replay-btn {
@@ -825,6 +843,10 @@ body {
     
     .final-name {
         font-size: 3rem;
+    }
+    
+    .valentine-question {
+        font-size: 1.6rem;
     }
     
     .hearts-grid {
@@ -975,6 +997,11 @@ body {
     .final-message {
         font-size: 0.9rem;
         padding: 0 10px;
+    }
+    
+    .valentine-question {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
     }
     
     .hearts-grid {
