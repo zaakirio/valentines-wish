@@ -468,11 +468,17 @@ body {
 .reason-heart {
     position: relative;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, z-index 0s;
+    z-index: 1;
 }
 
 .reason-heart:hover {
     transform: scale(1.1);
+    z-index: 50;
+}
+
+.reason-heart.revealed {
+    z-index: 50;
 }
 
 .reason-heart.special {
